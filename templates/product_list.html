@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Products</h1>
+  <div class="row">
+    {% for product in products %}
+    <div class="col-6">
+  
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ forloop.counter }}.{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+   
+</div>
+{% endfor %}</div>
+
+    {% endblock %}
